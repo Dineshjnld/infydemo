@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGuru</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>AgriGuru</h1>
+    <div id="dashboard">
+        <div id="weather">
+            <h2>Weather Forecast</h2>
+            <div id="weather-data"></div>
+        </div>
+        <div id="crop-suggestions">
+            <h2>Crop Suggestions</h2>
+            <div id="crop-data"></div>
+        </div>
+    </div>
+    <div id="chat">
+        <div id="chat-history"></div>
+        <input type="text" id="chat-input" placeholder="Ask me anything...">
+        <button id="chat-submit">Send</button>
+        <button id="voice-input">Use Voice</button>
+        <input type="file" id="image-upload" accept="image/*">
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

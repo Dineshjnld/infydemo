@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#weather, #crop-suggestions {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#chat {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#chat-history {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin-bottom: 10px;
+}
